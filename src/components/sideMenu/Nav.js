@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
-import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
+import { Collapse } from 'react-collapse';
 
 const Nav = ({nav, onMenuClick}) => {
     console.log('rendering nav yo.');
@@ -11,17 +11,26 @@ const Nav = ({nav, onMenuClick}) => {
     ;
     return (
         <li>
-          <Link to={ nav.href } activeClassName="active" onClick={ onMenuClick }>
-          {nav.icon && <i className={nav.icon}></i>}
-          { nav.name }
-          </Link>
-          { subMenu &&
-            <CSSTransitionGroup transitionName="slide" transitionAppear={ true } transitionAppearTimeout={ 500 } transitionEnterTimeout={ 300 }
-              transitionLeaveTimeout={ 300 }>
-              <ul className="nav child_menu">
-                { subMenu }
-              </ul>
-            </CSSTransitionGroup> }
+          { nav.href === '/' &&
+            <a href="#" onClick={ onMenuClick }>
+              <i className={ nav.icon }></i>
+              { nav.name }
+            </a> }
+          { nav.href === '#' &&
+            <a href="#" onClick={ onMenuClick }>
+              <i className={ nav.icon }></i>
+              { nav.name }
+            </a> }
+          { nav.href !== '#' && nav.href !== '/' &&
+            <Link to={ nav.href } onClick={ onMenuClick }>
+            <i className={ nav.icon }></i>
+            { nav.name }
+            </Link> }
+          <Collapse isOpened={ nav.selected }>
+            <ul className="nav child_menu">
+              { subMenu }
+            </ul>
+          </Collapse>
         </li>
         );
 };

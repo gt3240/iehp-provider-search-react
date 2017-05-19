@@ -8,15 +8,26 @@ import SideMenu from './sideMenu/SideMenu';
 // component at the top-level.
 class App extends React.Component {
   render() {
+  
+  const leftCol = {
+    width: '16%'
+  }
+
+  const rightCol={
+    width: '80%'
+  }
 
     return (
       <div>
         <Header />
-        <SideMenu />
-        <br/>
-        {this.props.children}
+        <div className="col-sm-2 p-0" style={leftCol}>
+          <SideMenu />
+        </div>
+        <div className="col-sm-10" style={rightCol}>
+          { this.props.children }
+        </div>
       </div>
-    );
+      );
   }
 }
 

@@ -1,0 +1,19 @@
+.btn {
+  border-radius: 2px;
+  transition: all .2s ease;
+  &.btn-primary {
+    background-color: $blue;
+    color: #ffffff;
+    &:hover {
+      background-color: $blue-dark;
+    }
+  }
+
+  &.btn-warning {
+    background-color: $orange;
+    color: #ffffff;
+    &:hover {
+      background-color: $blue-dark;
+    }
+  }
+}

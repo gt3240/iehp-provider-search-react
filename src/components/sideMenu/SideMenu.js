@@ -16,6 +16,14 @@ class SideMenu extends React.Component {
           subMenu: []
         },
         {
+          name: "Buttons",
+          href: "/buttons",
+          selected: false,
+          id: 7,
+          icon: "fa fa-hand-pointer-o",
+          subMenu: []
+        },
+        {
           name: "Forms",
           href: "#",
           selected: false,
@@ -74,6 +82,10 @@ class SideMenu extends React.Component {
         menuItem.selected = false;
       }
     });
+
+    this.setState({
+      menu: this.state.menu
+    });
   }
 
   render() {
@@ -82,7 +94,7 @@ class SideMenu extends React.Component {
       <div className="side-nav">
         <div className="main_menu_side hidden-print main_menu">
           <ul className="nav side-menu">
-            { this.state.menu.map((nav, index)=> <Nav key={ index } nav={ nav } onMenuClick={ this.onMenuClick.bind(this, nav) } />
+            { this.state.menu.map((nav, index)=> <Nav key={ index } nav={ nav } onMenuClick={ this.onMenuClick.bind(this, nav, index) } />
               ) }
           </ul>
         </div>

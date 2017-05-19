@@ -1,0 +1,20 @@
+.snippet {
+  .snippet-container {
+    width: 100%;
+    border: 1px solid $gray-light;
+    .header {
+      padding: 10px 20px;
+      color: #fff;
+      font-size: 1rem;
+      .fa {
+        float: right;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  pre{
+      border-radius: 0;
+  }
+}

@@ -1,10 +1,43 @@
 @import 'partials/colors';
 @import 'partials/header';
 @import 'partials/sideNav';
+@import 'partials/paddings';
+@import 'partials/margins';
+@import 'partials/snippet';
+@import 'partials/common';
+@import 'partials/buttons';
 
 html, body{
   margin: 0;
   padding: 0;
   min-width: 100%;
   font-family: Helvetica,Arial,Verdana;
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 767) {
+    html{
+        font-size: 75%
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+     html{
+        font-size: 95%
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+     html{
+        font-size: 100%
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+     html{
+        font-size: 100%
+    }
 }
