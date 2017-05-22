@@ -69,6 +69,14 @@ class SideMenu extends React.Component {
             }
           ]
         },
+        {
+          name: "Sample",
+          href: "/sample",
+          selected: false,
+          id: 7,
+          icon: "fa fa-file-code-o",
+          subMenu: []
+        }
       ]
     };
   }

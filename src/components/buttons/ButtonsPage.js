@@ -18,7 +18,7 @@ const ButtonsPage = () => {
     Danger
   </button>
 
-   <button class="btn btn-primary w150" disabled>
+  <button class="btn btn-primary w150" disabled>
     Disabled
   </button>
   `

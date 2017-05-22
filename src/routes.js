@@ -8,6 +8,7 @@ import ButtonsPage from './components/buttons/ButtonsPage';
 import FormButtonsPage from './components/forms/FormButtonsPage';
 import GeneralElementsPage from './components/ui-elements/GeneralElementsPage';
 import IconsPage from './components/ui-elements/IconsPage';
+import SamplePage from './components/sample/SamplePage';
 import NotFoundPage from './components/NotFoundPage';
 
 export default (
@@ -18,6 +19,7 @@ export default (
     <Route path="forms/form-buttons" component={FormButtonsPage}/>
     <Route path="ui-elements/general-elements" component={GeneralElementsPage}/>
     <Route path="ui-elements/icons" component={IconsPage}/>
+    <Route path="sample" component={SamplePage}/>
     <Route path="*" component={NotFoundPage}/>
   </Route>
 );
