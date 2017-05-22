@@ -7,7 +7,7 @@ export function searchProvider() {
     return dispatch => {
         fetch(`${PROVIDER_SEARCH_API_URL}/GetAllDropDownItems`)
             .then(res => res.json())
-          //.then(res => res.results)
+          //.then(res => res.results )
             .then(providers => dispatch(setProviders(providers)));
     };
 }
