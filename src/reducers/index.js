@@ -1,12 +1,14 @@
 import { combineReducers } from 'redux';
-import fuelSavings from './fuelSavingsReducer';
-import providers from './providersReducer';
-import {routerReducer} from 'react-router-redux';
+//import fuelSavings from './fuelSavingsReducer';
+import providersData from './providersReducer';
+import searchParams from './searchParamsReducer';
+import { routerReducer } from 'react-router-redux';
 
 const rootReducer = combineReducers({
-  fuelSavings,
-  providers,
-  routing: routerReducer
+	//fuelSavings,
+	providersData,
+	searchParams,
+	routing: routerReducer
 });
 
 export default rootReducer;

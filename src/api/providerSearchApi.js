@@ -1,9 +1,9 @@
-class ProviderSearch{
+// class ProviderSearch{
 
-    static searchProvider(params){
+//     static searchProvider(params){
 
-    }
+//     }
 
-}
+// }
 
-export default ProviderSearch;
+// export default ProviderSearch;

@@ -12,7 +12,7 @@ const Nav = ({nav, onMenuClick}) => {
     return (
         <li>
           { nav.href === '/' &&
-            <a href="#" onClick={ onMenuClick }>
+            <a href="/" onClick={ onMenuClick }>
               <i className={ nav.icon }></i>
               { nav.name }
             </a> }

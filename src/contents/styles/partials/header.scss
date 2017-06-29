@@ -1,7 +1,8 @@
 @import 'colors';
 .header {
   padding: 15px 40px;
-  background-color: $blue;
+  background-color: #ffffff;
+  border-bottom: 10px solid $blue;
   img {
     height: 30px;
     float: left;

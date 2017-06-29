@@ -1,11 +1,11 @@
 import { SET_PROVIDERS } from '../actions/providerSearchActions';
 
 export default (state = [], action) => {
-  console.log('reducer here', action);
-  switch (action.type) {
-    case SET_PROVIDERS:
-      return action.providers;
-    default:
-      return state;
-  }
+	switch (action.type) {
+		case SET_PROVIDERS: // provider search result
+			console.log('REDUCER / provider ----- here', action);
+			return action.providersData;
+		default:
+			return state;
+	}
 };

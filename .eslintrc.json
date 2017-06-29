@@ -6,11 +6,13 @@
     "es6": true,
     "node": true,
     "jasmine": true,
-    "jest": true
+    "jest": false
   },
   "parserOptions": {
     "ecmaFeatures": {
-      "jsx": true
+      "jsx": true,
+      "modules": true,
+      "experimentalObjectRestSpread": true
     },
     "sourceType": "module"
   },
